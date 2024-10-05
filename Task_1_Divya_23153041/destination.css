@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-image: url("images/cta-bg.jpg");
+    background-size: cover; 
+    background-position: center; 
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.nav:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.menu {
+    display: flex;
+    gap: 10px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.menu a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.menu a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.menu a:hover {
+    color: rgb(240, 146, 240)
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 100px;
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.l1 a img{
+    height: 300px;
+    width: 350px;
+}
+.l2 a img{
+    height: 300px;
+    width: 350px;
+}
+.l3 a img{
+    height: 300px;
+    width: 350px;
+}
+.l1, .l2, .l3 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 450px;
+    width: 350px;
+    border-radius: 20px;
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.l1:hover, .l2:hover, .l3:hover {
+    filter: blur(0);
+}
+
+.l1 img, .l2 img, .l3 img {
+    border-radius: 20px;
+    height: 300px;
+}
+.price {
+    width: 60px;
+    height: 30px;
+    background-color: purple;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 12px;
+}
+.main button{
+    background-color:purple;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 43px;
+    border-radius: 20px;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+}
