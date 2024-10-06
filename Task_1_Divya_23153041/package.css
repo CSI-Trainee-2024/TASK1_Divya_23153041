@@ -94,6 +94,10 @@ header p {
     margin: 10px 0;
     transition: color 0.3s ease;
 }
+.ditem img{
+    height: 16px;
+    width: 16px;
+}
 .dprice:hover {
     color: #c0392b;
 }
@@ -182,7 +186,6 @@ html {
         transform: translateY(0);
     }
 }
-
 @keyframes sleft {
     from {
         opacity: 0;
@@ -193,7 +196,6 @@ html {
         transform: translateX(0);
     }
 }
-
 @keyframes sright {
     from {
         opacity: 0;
@@ -216,11 +218,9 @@ html {
     header h1 {
         font-size: 24px;
     }
-
     .dprice {
         font-size: 24px;
     }
-
     .btn {
         font-size: 16px;
         padding: 12px 24px;
