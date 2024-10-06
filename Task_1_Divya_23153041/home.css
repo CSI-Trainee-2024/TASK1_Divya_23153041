@@ -1,7 +1,7 @@
 * {
     margin: 0;
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
 }
 body {
     overflow-x: hidden;
@@ -28,6 +28,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
 }
 .nav:hover {
     background-color: rgba(0, 0, 0, 0.7);
@@ -36,12 +37,16 @@ body {
     display: flex;
     gap: 10px;
 }
+.nav h3 {
+    font-family: Arial, sans-serif;
+}
 .menu a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
     position: relative;
     transition: color 0.3s ease;
+    font-family: Arial, sans-serif;
 }
 .menu a::before {
     content: '';
@@ -54,6 +59,7 @@ body {
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
+    font-family: Arial, sans-serif;
 }
 .menu a:hover::before {
     visibility: visible;
@@ -81,26 +87,28 @@ body {
     padding: 30px 20px;
 }
 .l1 button {
-    background-color: #4CAF50;
-    color: white;
     padding: 10px 20px;
-    margin: 8px 0;
-    border: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
     cursor: pointer;
-    width: 161px;
-    height: 43px;
-    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
     margin-left: 20px;
+}
+.l1 button:hover {
+    background-color: #06d38f;
+    color: white;
 }
 .l1 h1 {
     font-size: 70px;
     font-weight: 500;
     color: white;
     margin-left: 20px;
-    animation: slideInFromLeft 1s ease-out;
+    animation: sleft 1s ease-out;
 }
-
-@keyframes slideInFromLeft {
+@keyframes sleft {
     0% {
         transform: translateX(-100%);
         opacity: 0;
@@ -110,16 +118,15 @@ body {
         opacity: 1;
     }
 }
-
 .l1 p {
     font-size: 20px;
     color: white;
     margin-top: 30px;
     margin-left: 20px;
-    animation: slideInFromRight 1s ease-out;
+    animation: sright 1s ease-out;
+    font-weight: 400;
 }
-
-@keyframes slideInFromRight {
+@keyframes sright {
     0% {
         transform: translateX(100%);
         opacity: 0;
@@ -129,7 +136,10 @@ body {
         opacity: 1;
     }
 }
-
+.box1 p, .box2 p, .box3 p {
+    font-size: 20px;
+    color: #666;
+}
 .l1 #lower {
     display: flex;
     justify-content: center;
@@ -139,7 +149,6 @@ body {
     margin-left: 20px;
     font-size: 15px;
 }
-
 .r1 {
     width: 50px;
     height: 150px;
@@ -151,12 +160,10 @@ body {
     gap: 30px;
     display: flex;
 }
-
 .r1 a img {
     height: 30px;
     width: 30px;
 }
-
 .page2 {
     position: relative;
     height: 100vh;
@@ -170,7 +177,6 @@ body {
     background-size: cover;
     background-position: center;
 }
-
 .page2 h1 {
     position: relative;
     z-index: 1;
@@ -178,7 +184,6 @@ body {
     text-align: center;
     padding: 20px;
 }
-
 .boxes {
     display: flex;
     justify-content: center;
@@ -186,7 +191,6 @@ body {
     gap: 20px;
     padding: 20px;
 }
-
 .box1, .box2, .box3 {
     background-color: rgba(255, 255, 255, 0.6);
     padding: 20px;
@@ -196,11 +200,9 @@ body {
     position: relative;
     overflow: hidden;
 }
-
 .box1:hover, .box2:hover, .box3:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .box1 img, .box2 img, .box3 img {
     width: 100px;
     height: 100px;
@@ -213,7 +215,6 @@ body {
     padding: 50px 0 20px;
     position: relative;
 }
-
 .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -222,64 +223,54 @@ body {
     gap: 40px;
     padding: 0 20px;
 }
-
 .section h3 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #06d38f;
+    font-weight: 400;
 }
-
 .section h4 {
     font-size: 18px;
     margin-bottom: 20px;
     color: #06d38f;
+    font-weight: 400;
 }
-
 .section p {
     color: #ccc;
     line-height: 1.6;
     margin-bottom: 20px;
 }
-
 .section ul {
     list-style: none;
     padding: 0;
 }
-
 .section ul li {
     margin-bottom: 10px;
 }
-
 .section ul li a {
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .section ul li a:hover {
     color: #06d38f;
 }
-
 .links {
     display: flex;
     gap: 15px;
 }
-
 .links a {
     color: #ccc;
     font-size: 20px;
     transition: color 0.3s ease;
 }
-
 .links a:hover {
     color: #06d38f;
 }
-
 .form {
     display: flex;
     gap: 10px;
 }
-
 .form input {
     flex: 1;
     padding: 10px;
@@ -288,7 +279,6 @@ body {
     background-color: #333;
     color: white;
 }
-
 .form button {
     padding: 10px 15px;
     background-color: #06d38f;
@@ -298,18 +288,15 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .form button:hover {
     background-color: #04a06f;
 }
-
 .bottom {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #333;
 }
-
 .bottom p {
     color: #666;
 }
@@ -324,11 +311,9 @@ body {
     .links {
         justify-content: center;
     }
-
     .form {
         flex-direction: column;
     }
-
     .form button {
         width: 100%;
     }
@@ -337,15 +322,12 @@ body {
     .footer {
         padding: 30px 0 15px;
     }
-
     .section h3 {
         font-size: 20px;
     }
-
     .section h4 {
         font-size: 16px;
     }
-
     .bottom {
         margin-top: 30px;
     }
@@ -358,12 +340,10 @@ body {
         transform: translateY(-10px);
     }
 }
-
 .box1 h2, .box2 h2, .box3 h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
-
 .box1 p, .box2 p, .box3 p {
     font-size: 16px;
     color: #666;
@@ -373,36 +353,29 @@ body {
         flex-direction: column;
         padding: 10px;
     }
-
     .menu {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-
     .menu a {
         margin: 10px 0;
     }
-
     .lower {
         flex-direction: column;
         gap: 20px;
     }
-
     .l1 {
         width: 90%;
         height: auto;
         padding: 20px;
     }
-
     .l1 h1 {
         font-size: 40px;
     }
-
     .l1 p {
         font-size: 16px;
     }
-
     .r1 {
         width: 100%;
         height: auto;
@@ -413,12 +386,10 @@ body {
         gap: 10px;
         padding: 10px 0;
     }
-
     .r1 a img {
         height: 20px;
         width: 20px;
     }
-
     .boxes {
         flex-direction: column;
         gap: 20px;
@@ -428,29 +399,23 @@ body {
     .nav {
         padding: 10px 50px;
     }
-
     .menu a {
         margin: 0 5px;
     }
-
     .lower {
         gap: 50px;
     }
-
     .l1 {
         width: 80%;
         height: auto;
         padding: 20px;
     }
-
     .l1 h1 {
         font-size: 50px;
     }
-
     .l1 p {
         font-size: 18px;
     }
-
     .r1 {
         width: 40px;
         height: auto;
@@ -461,12 +426,10 @@ body {
         gap: 10px;
         padding: 10px 0;
     }
-
     .r1 a img {
         height: 25px;
         width: 25px;
     }
-
     .boxes {
         flex-direction: column;
         gap: 20px;
