@@ -30,11 +30,11 @@ header::before {
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    animation: slideInLeft 1s ease-out;
+    animation: sleft 1s ease-out;
     position: relative;
 }
 header p {
-    animation: slideInRight 1s ease-out;
+    animation: sright 1s ease-out;
     position: relative;
 }
 .main {
@@ -48,7 +48,7 @@ header p {
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-out;
+    animation: fade 1s ease-out;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .tour:hover {
@@ -59,7 +59,7 @@ header p {
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 8px;
-    animation: fadeIn 1.2s ease-out;
+    animation: fade 1.2s ease-out;
 }
 .mimage img {
     width: 100%;
@@ -76,7 +76,7 @@ header p {
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.4s ease-out;
+    animation: fade 1.4s ease-out;
     transition: transform 0.3s ease;
 }
 .pcard:hover {
@@ -93,10 +93,6 @@ header p {
     font-weight: bold;
     margin: 10px 0;
     transition: color 0.3s ease;
-}
-.ditem img{
-    height: 16px;
-    width: 16px;
 }
 .dprice:hover {
     color: #c0392b;
@@ -123,7 +119,7 @@ header p {
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.6s ease-out;
+    animation: fade 1.6s ease-out;
     transition: transform 0.3s ease;
 }
 .tourd:hover {
@@ -145,7 +141,7 @@ header p {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1.8s ease-out;
+    animation: fade 1.8s ease-out;
 }
 .fea {
     display: flex;
@@ -171,12 +167,12 @@ header p {
 }
 img {
     opacity: 0;
-    animation: fadeIn 0.5s ease-out forwards;
+    animation: fade 0.5s ease-out forwards;
 }
 html {
     scroll-behavior: smooth;
 }
-@keyframes fadeIn {
+@keyframes fade {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -187,7 +183,7 @@ html {
     }
 }
 
-@keyframes slideInLeft {
+@keyframes sleft {
     from {
         opacity: 0;
         transform: translateX(-50px);
@@ -198,7 +194,7 @@ html {
     }
 }
 
-@keyframes slideInRight {
+@keyframes sright {
     from {
         opacity: 0;
         transform: translateX(50px);
